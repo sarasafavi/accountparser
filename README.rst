@@ -38,15 +38,23 @@ different encoding, use ``--encoding <some valid encoding>``.
 Testing
 ========
 
-Unit tests are located in ``accountparser/tests``. To run tests against
-multiple versions of Python 3, use Tox. If Tox is not already installed on the
-system, you can install it with:
+Unit tests are located in ``accountparser/tests``. 
+
+To run tests against multiple versions of Python 3, use Tox. If Tox is not
+already installed on the system, you can install it with:
 
     ``$ pip install --user tox``
 
 With Tox installed, from within the project root do:
 
     ``$ tox``
+
+Alternatively, to run tests only against the virtualenv's Python version,
+use py.test from within the project's virtualenv:
+
+    ``$ pip install pytest``
+
+    ``$ py.test``
 
 Libraries Used
 ===============
